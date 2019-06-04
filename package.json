@@ -1,12 +1,12 @@
 {
-  "name": "electron-webpack-quick-start",
+  "name": "electron-svelte-starter",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "dev": "electron-webpack dev",
     "compile": "electron-webpack",
-    "dist": "yarn compile && electron-builder",
-    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
+    "build": "yarn compile && electron-builder -c.directories.output=build",
+    "build:dir": "yarn build --dir -c.compression=store -c.mac.identity=null"
   },
   "dependencies": {
     "source-map-support": "^0.5.12"

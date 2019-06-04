@@ -39,8 +39,8 @@ yarn dev
 yarn compile
 
 # `yarn compile` & create build with electron-builder
-yarn dist
+yarn build
 
 # `yarn compile` & create unpacked build with electron-builder
-yarn dist:dir
+yarn build:dir
 ```
