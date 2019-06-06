@@ -1,4 +1,6 @@
-const sass = require('svelte-preprocess-sass').sass;
+//const sass = require('svelte-preprocess-sass').sass;
+
+const preprocess = require('svelte-preprocess');
 
 const mode = process.env.NODE_ENV || 'development';
 const prod = mode === 'production';
@@ -19,11 +21,9 @@ module.exports = {
 					options: {
 						emitCss: true,
 						hotReload: false, // pending https://github.com/sveltejs/svelte/issues/2377
-						preprocess: {
-							style: sass({
-								includePaths: ['src', 'node_modules']
-							})
-						}
+						preprocess: preprocess({
+							/* options */
+						})
 					}
 				}
 			}

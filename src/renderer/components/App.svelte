@@ -2,7 +2,7 @@
   export let name;
 </script>
 
-<style type="text/sass">
+<style lang="scss">
   $color: green;
 
   h1 {
