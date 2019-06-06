@@ -1,12 +1,12 @@
-import App from './components/App.svelte';
+import App from './components/App.svelte'
 
 const app = new App({
-	target: document.body,
-	props: {
-		name: 'world'
-	}
-});
+  target: document.body,
+  props: {
+    name: 'world'
+  }
+})
 
-window.app = app;
+window.app = app
 
-export default app;
+export default app
